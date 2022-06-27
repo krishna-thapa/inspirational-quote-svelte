@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	export let title: string = 'DON';
+
+	var updateTitle = function () {
+		title = "Change the title";
+	};
+</script>
+
+<div class="index">
+	<h2>{title}</h2>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate ipsum maxime totam
+		perferendis officiis quae distinctio dicta fugiat repellat iure numquam, pariatur aut nobis
+		alias illum, esse sit quibusdam?
+	</p>
+	<button on:click={updateTitle}>Change the title</button>
+	<input type="text" bind:value={title} />
+</div>
