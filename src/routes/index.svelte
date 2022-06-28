@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let title: string = 'DON';
+	export let title: string = "DON";
 
 	var updateTitle = function () {
 		title = "Change the title";
