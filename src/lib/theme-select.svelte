@@ -1,6 +1,5 @@
 <script lang="ts">
-
-    type OptionType = {
+	type OptionType = {
 		value: string;
 		label: string;
 	};
@@ -12,10 +11,10 @@
 	];
 </script>
 
-<div class="mb-8">
+<div class="form-control">
 	<select data-choose-theme class="select select-bordered select-primary w-full max-w-3xl text-xl">
 		<option value="" disabled selected>-- Select Status --</option>
-        {#each options as theme}
+		{#each options as theme}
 			<option value={theme.value}>{theme.label}</option>
 		{/each}
 	</select>

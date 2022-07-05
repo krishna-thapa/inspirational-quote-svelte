@@ -1,5 +1,6 @@
 <script lang="ts">
-	import ThemeSelect from "$lib/theme-select.svelte";
+	// import ThemeSelect from "$lib/theme-select.svelte";
+	import Navbar from "$lib/navbar.svelte";
 
 	export let title: string = "DON";
 
@@ -9,8 +10,8 @@
 </script>
 
 <div>
+	<Navbar />
 	<h2>{title}</h2>
-	<ThemeSelect />
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate ipsum maxime totam
 		perferendis officiis quae distinctio dicta fugiat repellat iure numquam, pariatur aut nobis
