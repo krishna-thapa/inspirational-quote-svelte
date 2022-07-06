@@ -5,15 +5,16 @@
 	};
 
 	const options: OptionType[] = [
+		{ value: "light", label: "Light" },
 		{ value: "retro", label: "Retro" },
 		{ value: "dracula", label: "Dracula" },
 		{ value: "acid", label: "Acid" }
 	];
 </script>
 
-<div class="form-control">
-	<select data-choose-theme class="select select-bordered select-primary w-full max-w-3xl text-xl">
-		<option value="" disabled selected>-- Select Status --</option>
+<div class="form-control pr-2">
+	<select data-choose-theme class="select select-bordered select-ghost select-sm w-full text-base">
+		<option value="" disabled selected>Select theme</option>
 		{#each options as theme}
 			<option value={theme.value}>{theme.label}</option>
 		{/each}

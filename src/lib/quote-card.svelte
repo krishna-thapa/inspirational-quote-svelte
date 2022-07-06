@@ -1,0 +1,26 @@
+<div class="flex items-center justify-center px-5 py-5 mt-10">
+	<div
+		class="w-full mx-auto rounded-lg shadow-current shadow-2xl px-5 pt-5 pb-10"
+		style="max-width: 500px">
+		<div class="w-full pt-1 pb-5">
+			<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
+				<img src="https://randomuser.me/api/portraits/men/19.jpg" alt="" />
+			</div>
+		</div>
+		<div class="w-full mb-10">
+			<div class="text-4xl text-primary-focus text-left leading-tight h-3">“</div>
+			<p class="text-base text-center px-5">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium
+				recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.
+			</p>
+			<div class="text-4xl text-primary-focus text-right leading-tight h-3 -mt-3">”</div>
+		</div>
+		<div class="w-full">
+			<p class="text-md text-accent-focus font-bold text-center">Scott Windon</p>
+			<div class="text-center pt-2 text-xs text-center">
+				<div class="badge badge-outline">#Fashion</div>
+				<div class="badge badge-outline">#Products</div>
+			</div>
+		</div>
+	</div>
+</div>

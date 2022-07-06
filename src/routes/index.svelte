@@ -1,6 +1,6 @@
 <script lang="ts">
-	// import ThemeSelect from "$lib/theme-select.svelte";
 	import Navbar from "$lib/navbar.svelte";
+	import QuoteCard from "$lib/quote-card.svelte";
 
 	export let title: string = "DON";
 
@@ -11,6 +11,8 @@
 
 <div>
 	<Navbar />
+	<QuoteCard />
+
 	<h2>{title}</h2>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate ipsum maxime totam

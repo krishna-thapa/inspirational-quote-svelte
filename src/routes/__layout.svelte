@@ -1,7 +1,9 @@
 <script>
 	import { onMount } from "svelte";
-	import { themeChange } from "theme-change";
+	// @ts-ignore
+import { themeChange } from "theme-change";
 	import "../app.css";
+	
 	onMount(() => {
 		themeChange(false);
 	});
