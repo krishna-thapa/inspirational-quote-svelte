@@ -1,4 +1,5 @@
-<div class="flex items-center justify-center px-5 py-5 mt-10">
+<div class="indicator flex items-center justify-center px-5 py-5 mt-10">
+	<span class="indicator-item indicator-start badge badge-secondary">hello zdgxzdf</span>
 	<div
 		class="w-full mx-auto rounded-lg shadow-current shadow-2xl px-5 pt-5 pb-10"
 		style="max-width: 500px">

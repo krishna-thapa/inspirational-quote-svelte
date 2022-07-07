@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Navbar from "$lib/navbar.svelte";
-	import QuoteCard from "$lib/quote-card.svelte";
+	import QuoteCarousel from "$lib/quote-carousel.svelte";
 
 	export let title: string = "DON";
 
@@ -11,8 +11,7 @@
 
 <div>
 	<Navbar />
-	<QuoteCard />
-
+	<QuoteCarousel />
 	<h2>{title}</h2>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate ipsum maxime totam
