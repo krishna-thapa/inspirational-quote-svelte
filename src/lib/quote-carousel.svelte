@@ -15,7 +15,7 @@
 			quote: "Light",
 			genre: ""
 		},
-		{ csvId: "light", quote: "Light", author: "Ja/mes Bond", genre: "foo" }
+		{ csvId: "light", quote: "Light", author: "James Bond", genre: "foo" }
 	];
 
 	const quotesLength: number = quotes.length;
