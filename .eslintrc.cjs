@@ -13,6 +13,7 @@ module.exports = {
 		ecmaVersion: 2020
 	},
 	rules: {
+		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/no-inferrable-types": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "error",
 		"@typescript-eslint/explicit-function-return-type": "off",

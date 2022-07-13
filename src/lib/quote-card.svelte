@@ -1,3 +1,21 @@
+<script lang="ts">
+	import type { Quote } from "src/model/quote";
+	export let quoteValue: Quote;
+
+	let authorInitials: string | undefined = quoteValue.author
+		?.match(/\b(\w)/g)
+		?.join("/")
+		?.toUpperCase();
+
+	if (!quoteValue.image) {
+		if (authorInitials) {
+			quoteValue.image = `https://avatars.dicebear.com/api/initials/${authorInitials}/seed.svg`;
+		} else {
+			quoteValue.image = "https://avatars.dicebear.com/api/bottts/seed.svg";
+		}
+	}
+</script>
+
 <div class="indicator flex items-center justify-center px-5 py-5 mt-10">
 	<span class="indicator-item indicator-start badge badge-secondary">hello zdgxzdf</span>
 	<div
@@ -5,7 +23,7 @@
 		style="max-width: 500px">
 		<div class="w-full pt-1 pb-5">
 			<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-				<img src="https://randomuser.me/api/portraits/men/19.jpg" alt="" />
+				<img src={quoteValue.image} alt="" />
 			</div>
 		</div>
 		<div class="w-full mb-10">
@@ -19,7 +37,7 @@
 		<div class="w-full">
 			<p class="text-md text-accent-focus font-bold text-center">Scott Windon</p>
 			<div class="text-center pt-2 text-xs text-center">
-				<div class="badge badge-outline">#Fashion</div>
+				<div class="badge badge-outline">#{quoteValue.genre}</div>
 				<div class="badge badge-outline">#Products</div>
 			</div>
 		</div>
