@@ -7,7 +7,21 @@
 	const endpoint: string = "http://localhost:3004/quotes";
 	const { quoteApiData } = quoteStore;
 
-	const quoteText: string[] = ["Quote of the day", "Yesterdays", "Day before yesterday"];
+	const getQuoteHeading = function (days: number) {
+		const previous = new Date(new Date());
+		previous.setDate(previous.getDate() - days);
+		return previous.toLocaleDateString("en-gb", {
+			month: "long",
+			day: "numeric",
+			timeZone: "bst"
+		});
+	};
+
+	const dateString: string = new Date().toLocaleDateString("en-gb", {
+		month: "long",
+		day: "numeric",
+		timeZone: "bst"
+	});
 
 	onMount(async () => {
 		fetch(endpoint)
@@ -25,7 +39,13 @@
 <div class="carousel pb-20">
 	{#each $quoteApiData as quote, i}
 		<div id="quote{i}" class="carousel-item justify-center relative w-full">
-			<div class="quote-heading	absolute">{quoteText[i]}</div>
+			<div class="quote-heading	absolute">
+				{#if i == 0}
+					Quote of the day
+				{:else}
+					Quote for the day {getQuoteHeading(i)}
+				{/if}
+			</div>
 			<QuoteCard quoteValue={quote} />
 			<div class="absolute flex justify-around transform -translate-y-1/2 left-5 right-5 top-1/2">
 				{#if i == 0}

@@ -12,5 +12,5 @@
 ### Read more:
 
 - [Writing a Svelte Store with TypeScript](https://javascript.plainenglish.io/writing-a-svelte-store-with-typescript-22fa1c901a4)
-
 - [json-server](https://github.com/typicode/json-server)
+- [Date in JS](https://dockyard.com/blog/2020/02/14/you-probably-don-t-need-moment-js-anymore)

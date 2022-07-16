@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Great Vibes;
-  src: url(/fonts/GreatVibes-Regular.ttf);
+	font-family: Great Vibes;
+	src: url(/fonts/GreatVibes-Regular.ttf);
 }
 
 @font-face {
-  font-family: Libre Baskerville;
-  src: url(/fonts/LibreBaskerville-Regular.ttf);
+	font-family: Libre Baskerville;
+	src: url(/fonts/LibreBaskerville-Regular.ttf);
 }
 
 .quote-heading {
 	color: hsl(var(--pf));
 	font-family: "Great Vibes", cursive;
 	padding-top: 9px;
-  font-size: 60px;
+	font-size: 60px;
 	line-height: 30px;
 	font-weight: normal;
 	margin-bottom: 0px;
@@ -25,5 +25,5 @@
 }
 
 .random-quote {
-  margin-top: -50px;
+	margin-top: -50px;
 }
