@@ -6,5 +6,5 @@
 <div>
 	<Navbar />
 	<QuoteCarousel />
-	<div>Hello</div>
+	<div class="quote-heading random-quote">Random qoute</div>
 </div>

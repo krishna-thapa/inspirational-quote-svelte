@@ -16,8 +16,7 @@
 	}
 </script>
 
-<div class="indicator flex items-center justify-center px-5 py-5 mt-10">
-	<span class="indicator-item indicator-start badge badge-secondary">hello zdgxzdf</span>
+<div class="flex items-center justify-center px-5 pt-20 pb-5 mt-10">
 	<div
 		class="w-full mx-auto rounded-lg shadow-current shadow-2xl px-5 pt-5 pb-10"
 		style="max-width: 500px">
@@ -28,7 +27,7 @@
 		</div>
 		<div class="w-full mb-10">
 			<div class="text-4xl text-primary-focus text-left leading-tight h-3">“</div>
-			<p class="text-base text-center px-5">
+			<p class="quote-text text-base text-center px-5">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium
 				recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.
 			</p>
@@ -43,3 +42,10 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.quote-text {
+		font-family: "Libre Baskerville", serif;
+		line-height: 35px;
+	}
+</style>
