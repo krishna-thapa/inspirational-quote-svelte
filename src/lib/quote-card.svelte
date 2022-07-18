@@ -16,7 +16,7 @@
 	}
 </script>
 
-<div class="flex items-center justify-center px-5 pt-20 pb-5 mt-10">
+<div class="flex items-center justify-center px-5 pt-5 pb-5 mt-10">
 	<div
 		class="w-full mx-auto rounded-lg shadow-current shadow-2xl px-5 pt-5 pb-10"
 		style="max-width: 500px">
@@ -24,8 +24,9 @@
 			<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
 				<img src={quoteValue.image} alt="" />
 			</div>
+			<slot />
 		</div>
-		<div class="w-full mb-10">
+		<div class="w-full mb-10 ">
 			<div class="text-4xl text-primary-focus text-left leading-tight h-3">“</div>
 			<p class="quote-text text-base text-center px-5">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium

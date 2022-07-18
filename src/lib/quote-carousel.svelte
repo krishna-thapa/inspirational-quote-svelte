@@ -17,12 +17,6 @@
 		});
 	};
 
-	const dateString: string = new Date().toLocaleDateString("en-gb", {
-		month: "long",
-		day: "numeric",
-		timeZone: "bst"
-	});
-
 	onMount(async () => {
 		fetch(endpoint)
 			.then((response) => response.json())
@@ -43,10 +37,12 @@
 				{#if i == 0}
 					Quote of the day
 				{:else}
-					Quote for the day {getQuoteHeading(i)}
+					Quote for the day {getQuoteHeading(i + 1)}
 				{/if}
 			</div>
-			<QuoteCard quoteValue={quote} />
+			<div class="pt-12">
+				<QuoteCard quoteValue={quote} />
+			</div>
 			<div class="absolute flex justify-around transform -translate-y-1/2 left-5 right-5 top-1/2">
 				{#if i == 0}
 					<a href="#quote{$quoteApiData.length - 1}" class="btn btn-circle">❮</a>
