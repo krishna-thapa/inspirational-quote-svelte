@@ -25,7 +25,7 @@
 		</ul>
 	</div>
 	<div class="flex-1">
-		<a href="/" class="btn btn-ghost normal-case text-xl">Inspirational Quote</a>
+		<a href="/" class="home-title btn btn-ghost normal-case text-xl">Inspirational Quote</a>
 	</div>
 	<div class="flex-none gap-2">
 		<ThemeSelect />
@@ -50,3 +50,11 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.home-title {
+		color: hsl(var(--pf));
+		font-family: "Great Vibes", cursive;
+		font-size: 35px;
+	}
+</style>

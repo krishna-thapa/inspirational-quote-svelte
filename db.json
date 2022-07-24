@@ -1,7 +1,14 @@
 {
 	"quotes": [
-		{ "csvId": "csvId1", "quote": "Quote 1", "author": "Hate bro", "genre": "Hate" },
+		{
+			"csvId": "csvId1",
+			"quote": "Quote 1",
+			"author": "Hate bro",
+			"genre": "Hate",
+			"image": "https://placeimg.com/80/80/people"
+		},
 		{ "csvId": "csvId2", "quote": "Quote 2", "author": "Love bro", "genre": "Love" },
 		{ "csvId": "csvId2", "quote": "Quote 2", "genre": "Love" }
-	]
+	],
+	"random": { "csvId": "csvId1", "quote": "Quote 1", "author": "Hate bro", "genre": "Hate" }
 }

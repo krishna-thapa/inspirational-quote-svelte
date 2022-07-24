@@ -2,17 +2,21 @@
 	import type { Quote } from "src/model/quote";
 	export let quoteValue: Quote;
 
-	let authorInitials: string | undefined = quoteValue.author
+	// Reactive Declarations
+	$: authorInitials = quoteValue.author
 		?.match(/\b(\w)/g)
 		?.join("/")
 		?.toUpperCase();
 
-	if (!quoteValue.image) {
-		if (authorInitials) {
-			quoteValue.image = `https://avatars.dicebear.com/api/initials/${authorInitials}/seed.svg`;
-		} else {
-			quoteValue.image = "https://avatars.dicebear.com/api/bottts/seed.svg";
-		}
+	$: avatarUrl = `https://avatars.dicebear.com/api/initials/${authorInitials}/seed.svg`;
+
+	console.log();
+
+	// Reactive Statements
+	$: if (!quoteValue.image) {
+		if (!authorInitials) avatarUrl = "https://avatars.dicebear.com/api/bottts/seed.svg";
+	} else {
+		avatarUrl = quoteValue.image;
 	}
 </script>
 
@@ -22,23 +26,22 @@
 		style="max-width: 500px">
 		<div class="w-full pt-1 pb-5">
 			<div class="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-				<img src={quoteValue.image} alt="" />
+				<img src={avatarUrl} alt={quoteValue.author} title={quoteValue.author} />
 			</div>
 			<slot />
 		</div>
 		<div class="w-full mb-10 ">
 			<div class="text-4xl text-primary-focus text-left leading-tight h-3">“</div>
 			<p class="quote-text text-base text-center px-5">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium
-				recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.
+				{quoteValue.quote}
 			</p>
 			<div class="text-4xl text-primary-focus text-right leading-tight h-3 -mt-3">”</div>
 		</div>
 		<div class="w-full">
-			<p class="text-md text-accent-focus font-bold text-center">Scott Windon</p>
+			<p class="text-md text-accent-focus font-bold text-center">{quoteValue.author}</p>
 			<div class="text-center pt-2 text-xs text-center">
 				<div class="badge badge-outline">#{quoteValue.genre}</div>
-				<div class="badge badge-outline">#Products</div>
+				<div class="badge badge-outline">#PlaceHolder</div>
 			</div>
 		</div>
 	</div>
