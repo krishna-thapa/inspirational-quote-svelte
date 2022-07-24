@@ -6,8 +6,6 @@
 	const randomQuoteUrl = "http://localhost:9000/quote/random";
 	let randomQuote: Quote;
 
-	onMount(async () => calRandomQuoteApi());
-
 	async function calRandomQuoteApi() {
 		const response = await fetch(randomQuoteUrl, {
 			method: "GET",
@@ -17,6 +15,8 @@
 		});
 		randomQuote = await response.json();
 	}
+
+	onMount(async () => calRandomQuoteApi());
 </script>
 
 <div>
