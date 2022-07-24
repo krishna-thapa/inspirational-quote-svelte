@@ -11,3 +11,19 @@
 	<RandomQuote />
 	<Footer />
 </div>
+
+<style>
+	:global(.heading) {
+		font-family: "Great Vibes", cursive;
+		color: hsl(var(--pf));
+	}
+	:global(.quote-heading) {
+		padding-top: 9px;
+		font-size: 60px;
+		line-height: 30px;
+		font-weight: normal;
+		margin-bottom: 0px;
+		margin-top: 20px;
+		text-align: center;
+	}
+</style>

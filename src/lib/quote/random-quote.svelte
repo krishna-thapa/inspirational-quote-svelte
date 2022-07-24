@@ -21,7 +21,7 @@
 
 <div>
 	{#if randomQuote}
-		<div class="quote-heading random-quote">Random qoute</div>
+		<div class="heading quote-heading random-quote">Random qoute</div>
 		<QuoteCard quoteValue={randomQuote}>
 			<div class="w-20 h-20 -mt-16 float-right">
 				<button class="btn btn-circle" on:click|preventDefault={calRandomQuoteApi}>

@@ -33,7 +33,7 @@
 <div class="carousel" style="max-height: 650px;">
 	{#each $quoteApiData as quote, i}
 		<div id="quote{i}" class="carousel-item justify-center relative w-full">
-			<div class="quote-heading	absolute">
+			<div class="heading quote-heading	absolute">
 				{#if i == 0}
 					Quote of the day
 				{:else}

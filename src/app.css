@@ -11,15 +11,3 @@
 	font-family: Libre Baskerville;
 	src: url(/fonts/LibreBaskerville-Regular.ttf);
 }
-
-.quote-heading {
-	color: hsl(var(--pf));
-	font-family: "Great Vibes", cursive;
-	padding-top: 9px;
-	font-size: 60px;
-	line-height: 30px;
-	font-weight: normal;
-	margin-bottom: 0px;
-	margin-top: 20px;
-	text-align: center;
-}
